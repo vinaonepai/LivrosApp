@@ -1,0 +1,7 @@
+{
+  "name": "LivrosApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
