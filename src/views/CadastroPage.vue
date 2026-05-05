@@ -1,5 +1,15 @@
 <template>
   <ion-page>
+
+    <!-- 🔙 BOTÃO VOLTAR -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/login"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
     <ion-content class="page-content">
 
       <div class="container">
@@ -31,7 +41,11 @@ import {
   IonPage,
   IonContent,
   IonInput,
-  IonButton
+  IonButton,
+  IonHeader,
+  IonToolbar,
+  IonButtons,
+  IonBackButton
 } from '@ionic/vue'
 
 import { ref, computed } from 'vue'

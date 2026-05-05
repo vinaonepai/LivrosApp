@@ -1,13 +1,13 @@
 import { ref } from 'vue'
 
-// 🔥 IMPORT DAS IMAGENS (CONFERE OS NOMES!)
+
 import domCasmurro from '../assets/livros/dom-casmurro.jpg'
 import livro1984 from '../assets/livros/1984.jpg'
 import hobbit from '../assets/livros/hobbit.jpg'
 import revolucaoBichos from '../assets/livros/revolucao-bichos.jpg'
 import harryPotter from '../assets/livros/harry-potter.jpg'
 
-// 🔄 carregar favoritos salvos
+
 const favoritosSalvos = JSON.parse(localStorage.getItem('favoritos') || '[]')
 
 export const livros = ref([

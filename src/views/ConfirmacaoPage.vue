@@ -1,5 +1,15 @@
 <template>
   <ion-page>
+
+    <!-- 🔙 BOTÃO VOLTAR -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/login"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
     <ion-content class="page-content">
 
       <div class="container">
@@ -23,7 +33,16 @@
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent, IonButton } from '@ionic/vue'
+import {
+  IonPage,
+  IonContent,
+  IonButton,
+  IonHeader,
+  IonToolbar,
+  IonButtons,
+  IonBackButton
+} from '@ionic/vue'
+
 import { useRouter } from 'vue-router'
 
 defineOptions({ name: 'ConfirmacaoPage' })

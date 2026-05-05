@@ -1,5 +1,15 @@
 <template>
   <ion-page>
+
+    <!-- 🔙 BOTÃO VOLTAR -->
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button default-href="/home"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
     <ion-content class="page-content">
 
       <div class="container">
@@ -33,7 +43,15 @@
 </template>
 
 <script setup lang="ts">
-import { IonPage, IonContent } from '@ionic/vue'
+import {
+  IonPage,
+  IonContent,
+  IonHeader,
+  IonToolbar,
+  IonButtons,
+  IonBackButton
+} from '@ionic/vue'
+
 import { ref, onMounted } from 'vue'
 
 const favoritos = ref<any[]>([])
