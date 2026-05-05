@@ -14,7 +14,6 @@
       <div class="container">
         <h1 class="title">❤️ Favoritos</h1>
 
-        <!-- caso não tenha favoritos -->
         <div v-if="favoritos.length === 0" class="empty">
           Nenhum livro favoritado
         </div>
