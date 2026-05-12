@@ -6,7 +6,6 @@
         <h1 class="title">📚 Biblioteca</h1>
         <p class="subtitle">Seus livros favoritos</p>
 
-        <!-- ❤️ BOTÃO FAVORITOS (ADICIONADO) -->
         <ion-button class="btn-fav" expand="block" @click="$router.push('/favoritos')">
           ❤️ Ir para Favoritos
         </ion-button>
@@ -27,7 +26,6 @@
               <span class="categoria">{{ livro.categoria }}</span>
             </div>
 
-            <!-- ❤️ FAVORITO -->
             <ion-icon
               :icon="livro.favorito ? heart : heartOutline"
               class="heart"
@@ -47,7 +45,6 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { heart, heartOutline } from 'ionicons/icons'
 
-// 🔥 IMPORT DAS IMAGENS
 import domCasmurro from '../assets/livros/dom-casmurro.jpg'
 import livro1984 from '../assets/livros/1984.jpg'
 import hobbit from '../assets/livros/hobbit.jpg'
@@ -58,7 +55,6 @@ defineOptions({ name: 'HomePage' })
 
 const router = useRouter()
 
-// 🔥 CARREGAR FAVORITOS SALVOS
 const favoritosSalvos = JSON.parse(localStorage.getItem('favoritos') || '[]')
 
 const livros = ref([
@@ -109,7 +105,6 @@ const livros = ref([
   }
 ])
 
-// ❤️ FUNÇÃO FAVORITO
 const toggleFavorito = (livro: any) => {
   livro.favorito = !livro.favorito
 
@@ -144,7 +139,6 @@ const irDetalhes = (id: number) => {
   margin-bottom: 20px;
 }
 
-/* ❤️ BOTÃO */
 .btn-fav {
   margin-bottom: 15px;
   --background: linear-gradient(90deg, #ff4d6d, #ff8fa3);
