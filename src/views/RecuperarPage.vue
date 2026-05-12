@@ -21,7 +21,6 @@
             Recuperar
           </ion-button>
 
-          <!-- 🔙 BOTÃO VOLTAR (ADICIONADO) -->
           <ion-button
             expand="block"
             fill="outline"
@@ -94,7 +93,6 @@ const irConfirmacao = () => {
   --background: linear-gradient(90deg, #00eaff, #00ff95);
 }
 
-/* 🔙 BOTÃO VOLTAR */
 .btn-voltar {
   --border-color: #00eaff;
   color: #00eaff;
