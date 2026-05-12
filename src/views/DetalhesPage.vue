@@ -48,7 +48,6 @@ import {
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 
-// 🔥 IMPORT DAS MESMAS IMAGENS
 import domCasmurro from '../assets/livros/dom-casmurro.jpg'
 import livro1984 from '../assets/livros/1984.jpg'
 import hobbit from '../assets/livros/hobbit.jpg'
